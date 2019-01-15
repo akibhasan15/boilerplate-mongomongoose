@@ -7,7 +7,9 @@
 /*  ================== */
 
 /** 1) Install & Set up mongoose */
-
+var mongoose=require('mongoose');
+var mongodb=require('mongodb');
+mongoose.connect('mongodb://akib2:hello123@ds133360.mlab.com:33360/data');
 // Add `mongodb` and `mongoose` to the project's `package.json`. Then require 
 // `mongoose`. Store your **mLab** database URI in the private `.env` file 
 // as `MONGO_URI`. Connect to the database using `mongoose.connect(<Your URI>)`
